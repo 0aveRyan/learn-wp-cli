@@ -18,6 +18,9 @@ This guide is meant for Linux/Unix based systems (which includes MacOS, ChromeOS
 
 If you're a Windows user, this guide is likely still useful to you! Often when you're running WP-CLI, you'll be remotely-connected to an internet server or local, virtual server on your Windows machine that's running one of these Unix-like operating systems. Windows 10 also offers a system called Bash on Ubuntu on Windows (yes, a mouthful) which lets you use native Linux commands on your Windows machine.
 
+### Why Learn The Command Line
+* More flexibility 
+
 ### Under The Hood: `STDIN`, `STDOUT` & `STDERR`
 
 Most modern programming languages like PHP, JavaScript and Python can be used to create a CLI application -- just as these languages can be used to generate HTML documents for a web browser.

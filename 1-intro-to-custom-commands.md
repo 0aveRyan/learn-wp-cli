@@ -2,11 +2,11 @@
 
 > Any sufficiently advanced technology is indistinguishable from magic. - Arthur C. Clarke
 
-For a long time, I used WP-CLI and thought "the core commands are _so powerful_, they must be _so challenging_ to create." 
+For a long time, I used WP-CLI and thought "the core commands are _so powerful_, they must be _so challenging_ to create. 
 
-In reality, working on WP-CLI commands is more like creating a basic electrical circuit than a rocket engine. Which isn't to say it's always "quick" or "easy," but if you think it's magic you may be surprised... and it could very well be quicker and easier than you expect.
+In reality, working on WP-CLI commands is more like creating an electrical circuit than a rocket engine. Which isn't to say it's always "quick" or "easy," but if you think it's magic you may be surprised... and it could very well be quicker and easier than you expect.
 
-That said, even with the knowledge that building commands isn't rocket science, it's easy to psyche yourself out: _I don't have a genius idea for a custom command to change the world or even my workflow..._
+However, even with the knowledge that building commands isn't rocket science, it's easy to psyche yourself out: _I don't have a genius idea for a custom command to change the world, my products or even my workflow..._
 
 ### Some benefits of creating Custom WP-CLI Commands:
 * A set of tools accessible from anywhere and easily shared with others.

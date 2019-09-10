@@ -10,7 +10,7 @@ Base commands for building WP-CLI Code Generators.
 
 ### [CLImate](https://climate.thephpleague.com/) - Advanced Formatting, Interactivity and Animation
 
-WP-CLI comes with particularly useful helper functions and utilities, but I find I often need an abstract class with lots of my own helpers for formatting and interactivity that my custom command classes extend.
+WP-CLI comes with particularly useful helper functions and utilities, but I find I often need an abstract class with my own helpers for formatting and interactivity that my custom command classes extend.
 
 Enter [CLImate](https://climate.thephpleague.com/), a terrific PHP package from The League of Extraordinary Packages. CLImate does overlap some functionality provided in WP-CLI helpers and utilties, but it can be used in-lieu or alongside without issue. It also brings more advanced formatting, animation and interactive tools like CLI checkboxes and multiselects that are common in JavaScript-based CLIs.
 

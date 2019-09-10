@@ -1,12 +1,12 @@
 # Using WP-CLI's Internal API & Utility Functions
 
+## Introduction
+
 WP-CLI isn't just a robust tool, it has robust and reusable internal utilities that greatly expedite building WP-CLI commands just as powerful as the Core commands.
 
-The official documentation is fantastic and extensive, but if it has one shortcoming it's that it's organized alphabetically and similar tools aren't grouped together. 
+The official documentation is fantastic and extensive, but if it has one shortcoming it's that it's organized alphabetically instead of assigning a hiearchy of importance or grouping like items.
 
 This chapter aims to surface some of the most commonly-used functions and utilities.
-
-## Introduction
 
 ## Key API Functions
 
@@ -94,9 +94,24 @@ _Work-in-progress..._
 
 ### `WP_CLI\Utils\format_items()`
 
-_Work-in-progress..._
+This method is incredibly useful for outputting data in a variety of formats, including a CLI table, CSV, YAML and JSON.
 
 ### `WP_CLI\Utils\get_flag_value()`
+
+Instead of accessing `$assoc_args` directly, use this method because flags can be negated with `--no-queit` or `--quiet`.
+
+```php
+// bad
+function( $args, $assoc_args ) {
+  $value = ! empty( $assoc_args['my-flag'] ) ? $assoc_args['my-value'] : 'default-value';
+}
+// good
+function( $args, $assoc_args ) {
+  $value = WP_CLI\Utils\get_flag_value( $assoc_args, 'my-value', 'default-value' );
+}
+```
+
+### `WP_CLI\Utils\trailingslashit()`
 
 _Work-in-progress..._
 
@@ -105,10 +120,6 @@ _Work-in-progress..._
 _Work-in-progress..._
 
 ### `WP_CLI\Utils\get_home_dir()`
-
-_Work-in-progress..._
-
-### `WP_CLI\Utils\trailingslashit()`
 
 _Work-in-progress..._
 
