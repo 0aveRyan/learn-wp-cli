@@ -140,10 +140,10 @@ Some of the real power of WP-CLI is composing commands together in a sequence wh
 By making commands that focus on doing one thing, the results of one command can be passed into arguments for another command, making them much more versitile and composible.
 
 There are two primary ways to compose commands together:
-1. Stuffing a command in a bash variable used by another.
+1. Using a subshell to use the results of a command inside another
 1. Using `xargs` to pass response items to the second command.
 
-In general, I find the `xargs` syntax easier on the eyes, but there isn't a right way to do it, and sometimes there are benefits to bash variables and loops.
+In general, I find the `xargs` syntax easier on the eyes, but there isn't a right way to do it, and sometimes there are benefits to subshells and loops.
 
 ### Scenario: Delete All Drafts For a Specific User
 
@@ -153,7 +153,7 @@ On a news website, a user might have thousands of posts and hundreds of drafts, 
 
 Enter WP-CLI!
 
-##### Using a Bash Variable
+##### Using a subshell
 ```bash
 wp post delete --force $(wp post list --post_status=draft --post_author=1 --format=ids)
 ```
@@ -172,7 +172,7 @@ When I worked in publishing, one frequent task would be granting a new editor pr
 In this example, we're looping over all sites in a multisite, and setting user "1" as an editor, with a custom capability called `custom_homepage_builder`.
 
 ##### Using For Loop
-_(Here we use a for loop instad of simply stuffing a variable so we can echo-out the name of the site before setting user privleges, so the output can be copied and saved for reference.)_
+_(Here we use a for loop instad of using a subshell so we can echo-out the name of the site before setting user privleges, so the output can be copied and saved for reference.)_
 ```bash
 for url in $(wp site list --format=csv --fields=url | tail -n +2); do echo "$url: "; wp user set-role 1 editor --url=$url; wp user add-cap 1 custom_homepage_builder --url=$url; done
 ```
