@@ -3,9 +3,6 @@
 **[0aveRyan/wp-lando](https://github.com/0aveRyan/wp-lando)**
 `wp lando` command for quickly installing and pre-configuring WordPress on Lando.
 
-**[presspwrd/replicator](https://github.com/presspwrd/replicator)**
-Base commands for building WP-CLI Code Generators.
-
 # More Resources
 
 ### [wp-forge scaffolding tools](https://github.com/wp-forge/wp-scaffolding-tool)
