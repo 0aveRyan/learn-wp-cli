@@ -8,6 +8,10 @@ Base commands for building WP-CLI Code Generators.
 
 # More Resources
 
+### [wp-forge scaffolding tools](https://github.com/wp-forge/wp-scaffolding-tool)
+
+Building a scaffold with a customized/opinionated boilerplate has long been arduous and manual. While the Core scaffold commands are a great starting place, this tool built by @wpscholar is much more robust and can handle more dynamic things like running shell commands, adding Composer and npm packages, with a much more robust foundation and rich customization support.
+
 ### [CLImate](https://climate.thephpleague.com/) - Advanced Formatting, Interactivity and Animation
 
 WP-CLI comes with particularly useful helper functions and utilities, but I find I often need an abstract class with my own helpers for formatting and interactivity that my custom command classes extend.
