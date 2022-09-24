@@ -26,5 +26,4 @@ Helpful WP-CLI presentation at WordCamp Rome 2018 from WordPress Contributor Joh
 
 WP-CLI intro and valuable info from WP-CLI Contributor Alain Schlesser.
 
-
-
+### [Chris Klosowski: Building WP-CLI Progress Bars](https://chrisk.io/adding-progress-bars-wp-cli-processes/)
